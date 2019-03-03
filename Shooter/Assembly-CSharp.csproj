@@ -60,11 +60,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CharCont.cs" />
     <Compile Include="Assets\Fantasy Skybox\Demo\Scripts\GE_FantasySkybox_Demo.cs" />
     <Compile Include="Assets\Fantasy Skybox\Demo\Scripts\GE_FantasySkybox_UIs.cs" />
     <Compile Include="Assets\GE Common Assets\GE Toggle Full Screen\Scripts\GE_ToggleFullScreenUI.cs" />
     <Compile Include="Assets\GE Common Assets\Scripts\GE_UIResponder.cs" />
     <Compile Include="Assets\Gunscript.cs" />
+    <Compile Include="Assets\LookArounds.cs" />
+    <Compile Include="Assets\PlayerMot.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -74,6 +77,10 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\TargetShoots.cs" />
+    <Compile Include="Assets\Wiggle\scripts\balanceOnLegs.cs" />
+    <Compile Include="Assets\Wiggle\scripts\CharacterUpright.cs" />
+    <Compile Include="Assets\Wiggle\scripts\HingeJointTarget.cs" />
+    <Compile Include="Assets\Wiggle\scripts\playerController.cs" />
     <Compile Include="Assets\XWeaponTrail\Scripts\Spline.cs" />
     <Compile Include="Assets\XWeaponTrail\Scripts\SplineControlPoint.cs" />
     <Compile Include="Assets\XWeaponTrail\Scripts\VertexPool.cs" />
