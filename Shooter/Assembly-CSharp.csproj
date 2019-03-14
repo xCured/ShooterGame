@@ -60,14 +60,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CharCont.cs" />
     <Compile Include="Assets\Fantasy Skybox\Demo\Scripts\GE_FantasySkybox_Demo.cs" />
     <Compile Include="Assets\Fantasy Skybox\Demo\Scripts\GE_FantasySkybox_UIs.cs" />
     <Compile Include="Assets\GE Common Assets\GE Toggle Full Screen\Scripts\GE_ToggleFullScreenUI.cs" />
     <Compile Include="Assets\GE Common Assets\Scripts\GE_UIResponder.cs" />
-    <Compile Include="Assets\Gunscript.cs" />
-    <Compile Include="Assets\LookArounds.cs" />
-    <Compile Include="Assets\PlayerMot.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -76,7 +72,11 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
-    <Compile Include="Assets\TargetShoots.cs" />
+    <Compile Include="Assets\Scripts\CharCont.cs" />
+    <Compile Include="Assets\Scripts\Gunscript.cs" />
+    <Compile Include="Assets\Scripts\LookArounds.cs" />
+    <Compile Include="Assets\Scripts\PlayerMot.cs" />
+    <Compile Include="Assets\Scripts\TargetShoots.cs" />
     <Compile Include="Assets\Wiggle\scripts\balanceOnLegs.cs" />
     <Compile Include="Assets\Wiggle\scripts\CharacterUpright.cs" />
     <Compile Include="Assets\Wiggle\scripts\HingeJointTarget.cs" />
