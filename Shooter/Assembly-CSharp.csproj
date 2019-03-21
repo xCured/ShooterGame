@@ -74,8 +74,10 @@
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\CharCont.cs" />
     <Compile Include="Assets\Scripts\Gunscript.cs" />
-    <Compile Include="Assets\Scripts\LookArounds.cs" />
+    <Compile Include="Assets\Scripts\NetworkShoots.cs" />
     <Compile Include="Assets\Scripts\PlayerMot.cs" />
+    <Compile Include="Assets\Scripts\PlayerWeapon.cs" />
+    <Compile Include="Assets\Scripts\Setup.cs" />
     <Compile Include="Assets\Scripts\TargetShoots.cs" />
     <Compile Include="Assets\Wiggle\scripts\balanceOnLegs.cs" />
     <Compile Include="Assets\Wiggle\scripts\CharacterUpright.cs" />
