@@ -8,7 +8,7 @@ public class TargetShoots : MonoBehaviour
     public void takeDmg(float damageAmount)
     {
         health -= damageAmount;
-        if(health<= 0f)
+        if (health <= 0f)
         {
             dead();
         }
@@ -18,3 +18,4 @@ public class TargetShoots : MonoBehaviour
         Destroy(gameObject);
     }
 }
+

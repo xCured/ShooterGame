@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{A7FEC6DC-F79B-B98E-4C85-31DA3C9D3FFE}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/NetworkShoots.cs" Line="58" Column="26" />
+      <File FileName="Assets/Scripts/PlayerManager.cs" Line="46" Column="6" />
+      <File FileName="Assets/Scripts/Setup.cs" Line="34" Column="47" />
+      <File FileName="Assets/Scripts/TargetShoots.cs" Line="21" Column="1" />
+      <File FileName="Assets/Scripts/PlayerWeapon.cs" Line="11" Column="16" />
+      <File FileName="Assets/Scripts/PlayerMot.cs" Line="55" Column="56" />
+      <File FileName="Assets/Scripts/Gunscript.cs" Line="32" Column="36" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -8,7 +8,7 @@ public class PlayerWeapon
 
     public string WeaponName = "PaintBall!";
 
-    public float damage = 20f;
+    public int damage = 20;
     public float range = 200f;
     public float Firerate = 10f;
 

@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
+
+
 public class Setup : NetworkBehaviour {
 
     //create list of components to disable since everything is in behaviour. we create array
@@ -8,6 +10,8 @@ public class Setup : NetworkBehaviour {
 
     string remoteLayers = "Remote";
     Camera cams;
+
+
 
     private void Start()
     {
@@ -29,7 +33,7 @@ public class Setup : NetworkBehaviour {
                 cams.gameObject.SetActive(false);
             }
         }
-        registerplayer();
+        GetComponent<PlayerManager>().Setup();
 
     }
 
@@ -52,13 +56,27 @@ public class Setup : NetworkBehaviour {
         if (cams !=null){
             cams.gameObject.SetActive(true);
         }
+
+        GameManager.Unregister(transform.name);
     }
 
-    void registerplayer()
+    //void registerplayer()
+    //{
+    //    string id = "Player" + GetComponent<NetworkIdentity>().netId;
+
+    //    transform.name = id;
+    //}
+
+
+    //Runs everytime a client is set up locally 
+   
+    public override void OnStartClient()
     {
-        string id = "Player" + GetComponent<NetworkIdentity>().netId;
+        base.OnStartClient();
 
-        transform.name = id;
+        string netID = GetComponent<NetworkIdentity>().netId.ToString();
+        PlayerManager Players = GetComponent<PlayerManager>();
+
+        GameManager.PlayerRegistration(netID, Players);
     }
-
 }

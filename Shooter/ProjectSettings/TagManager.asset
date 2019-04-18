@@ -8,6 +8,7 @@ TagManager:
   - Box
   - ground
   - floor
+  - ChildObj
   layers:
   - Default
   - TransparentFX
