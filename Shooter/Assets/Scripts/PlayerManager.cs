@@ -5,24 +5,28 @@ using UnityEngine.Networking;
 
 
 public class PlayerManager : NetworkBehaviour
-{
+{   
+    [SerializeField]
+    public GameObject[] RespawnPoint;
 
     [SyncVar]
     private bool _Dead = false;
     public bool Dead
     {
+       
         get { return _Dead;  }
+        [SerializeField]
         protected set { _Dead = value; }
     }
 
-    int maxHealth = 100;
+    private int maxHealth = 100;
 
     [SerializeField]
     private Behaviour[] OnDeathDisable;
     private bool[] IsEnabled;
 
     [SyncVar] //Syncs the current health to all clients. This was quite difficult to find since everything is obsolete. 
-    int currentHealth;
+   private int currentHealth;
    
 
     // Start is called before the first frame update
@@ -45,8 +49,9 @@ public class PlayerManager : NetworkBehaviour
             return;
         if (Input.GetKeyDown(KeyCode.K))
         {
-            Damage(100); 
+           RpcDamage(100); 
         }
+     
     }
 
 
@@ -62,14 +67,14 @@ public class PlayerManager : NetworkBehaviour
         }
 
 
-        Collider _col = GetComponent<Collider>();
-        if(_col != null)
-        {
-            _col.enabled = true;
-        }
+        //Collider _col = GetComponent<Collider>();
+        //if(_col != null)
+        //{
+        //    _col.enabled = true;
+        //}
     }
-    [Client]
-    public void Damage(int amount)
+    [ClientRpc]
+    public void RpcDamage(int amount)
     {
         if (Dead)
             return;
@@ -87,6 +92,7 @@ public class PlayerManager : NetworkBehaviour
 
    private void Respawn()
     {
+       
         Dead = true;
         //Disable stuff so you cant move when dead.
         for (int i = 0; i < OnDeathDisable.Length; i++)
@@ -95,14 +101,14 @@ public class PlayerManager : NetworkBehaviour
         }
 
 
-        Collider _col = GetComponent<Collider>();
-        if (_col != null)
-        { 
-            _col.enabled = false; 
-        }
+        //Collider _col = GetComponent<Collider>();
+        //if (_col != null)
+        //{ 
+        //    _col.enabled = false; 
+        //}
 
         StartCoroutine(Respawning());
-        //RespawnFunction
+       
 
 
 
@@ -111,12 +117,20 @@ public class PlayerManager : NetworkBehaviour
 
     IEnumerator Respawning()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(3f);
         SetDefaults();
         Transform SpawnPoint = NetworkManager.singleton.GetStartPosition();
-        transform.position = SpawnPoint.position;
-       // s transform.position = SpawnPoint.position;
-        transform.rotation = SpawnPoint.rotation;
+       // RespawnPoint.transform.position   = SpawnPoint.position;
+       // transform.position = SpawnPoint.position;
+        // s transform.position = SpawnPoint.position;
+        //RespawnPoint.transform.rotation = SpawnPoint.rotation;
+        for (int i = 0; i < RespawnPoint.Length; i++)
+        {
+            RespawnPoint[i].transform.rotation = SpawnPoint.rotation;
+            RespawnPoint[i].transform.position = SpawnPoint.position;
+
+        }
+       // transform.rotation = SpawnPoint.rotation;
     }
 
 

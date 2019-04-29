@@ -9,9 +9,7 @@ public class NetworkShoots : NetworkBehaviour
     private Camera Cameras;
     [SerializeField]
     public LayerMask Layers;
-
-   
-
+    
      void Start()
     {
         if (Cameras == null)
@@ -41,6 +39,7 @@ public class NetworkShoots : NetworkBehaviour
             if (Ray.transform.tag == "Player" )
             {
                 Debug.Log("You hit something");
+                
                 CmdPlayerShot(Ray.collider.name, weapons.damage);
             }
         }
@@ -55,7 +54,7 @@ public class NetworkShoots : NetworkBehaviour
         Debug.Log(playerID + "player shot");
        
       PlayerManager _Player =  GameManager.GetPlayer(playerID);
-        _Player.Damage(_Damage);
+        _Player.RpcDamage(_Damage);
         //[2] the server takes the information about hte playerid, finds the player component by using the gamemanager which tracks different players.
         //takes damage variable which puts a damage variable 
         //Since the currenthealth is synced  it locally checks if the health is reduced which syncs it to all clients. 

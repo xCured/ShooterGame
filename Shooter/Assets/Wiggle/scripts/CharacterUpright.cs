@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Networking;
 
 public class CharacterUpright : MonoBehaviour
 {
@@ -15,9 +16,10 @@ public class CharacterUpright : MonoBehaviour
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
-        rigidbody.maxAngularVelocity = 40; // **** CANNOT APPLY HIGH ANGULAR FORCES UNLESS THE MAXANGULAR VELOCITY IS INCREASED ****
+        rigidbody.maxAngularVelocity = 50; // **** CANNOT APPLY HIGH ANGULAR FORCES UNLESS THE MAXANGULAR VELOCITY IS INCREASED ****
     }
     //
+
     void FixedUpdate()
     {
         if (keepUpright)

@@ -1,10 +1,10 @@
 OSXUniversal
 PlayerPath?
-/Users/xcured/Desktop/ShooterGame/shootergame/Shooter/Builds/Shooter.app
+C:/Users/Taha/Desktop/Skrrt/shootergame/Shooter/Builds.app
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?
-54884fa01c9ab6b623290fe9e3bcbc62 Assembly-CSharp.dll:.PlayerManager
+c0c6b0182fd583c875d472f022117f45 Assembly-CSharp.dll:.PlayerManager
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 01aa15e337e3a9c62f15153dfac6d589 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
 
-
+[RequireComponent(typeof(PlayerManager))]
 public class Setup : NetworkBehaviour {
 
     //create list of components to disable since everything is in behaviour. we create array

@@ -6,16 +6,19 @@ public class CharCont : MonoBehaviour
 {
 
 
-    [SerializeField]
-    private float speed = 5f;
+
+    private float speed = 12f;
     private PlayerMot Motor;
-    private float MouseSens = 5f;
+    [SerializeField]
+    private float MouseSens = 2f;
+    [SerializeField]
+    private float MouseSensY = 2f;
     // Start is called before the first frame update
     void Start()
     {
         Motor = GetComponent<PlayerMot>();
     }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -34,7 +37,7 @@ public class CharCont : MonoBehaviour
         float yRot = Input.GetAxis("Mouse X");
 
 
-        Vector3 _rotation = new Vector3(0f, yRot, 0f) * MouseSens;
+        Vector3 _rotation = new Vector3(0f, yRot, 0f) * MouseSensY;
 
         Motor.Rotate(_rotation);
 

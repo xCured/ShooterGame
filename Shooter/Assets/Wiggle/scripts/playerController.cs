@@ -16,8 +16,7 @@ public class playerController : MonoBehaviour
 
     public float rotateSpeed;
 
-    Vector3 rotationLeft;
-    Vector3 rotationRight;
+   
 
     void Start()
     {	// sphere
