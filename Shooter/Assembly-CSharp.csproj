@@ -60,20 +60,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CursorLock.cs" />
     <Compile Include="Assets\GE Common Assets\GE Toggle Full Screen\Scripts\GE_ToggleFullScreenUI.cs" />
     <Compile Include="Assets\GE Common Assets\Scripts\GE_UIResponder.cs" />
-    <Compile Include="Assets\RoomsList.cs" />
-    <Compile Include="Assets\Scripts\CharCont.cs" />
+    <Compile Include="Assets\Scripts\Controls\CharCont.cs" />
+    <Compile Include="Assets\Scripts\Controls\CursorLock.cs" />
+    <Compile Include="Assets\Scripts\Controls\PlayerMot.cs" />
+    <Compile Include="Assets\Scripts\Decals.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Gunscript.cs" />
-    <Compile Include="Assets\Scripts\HostingGame.cs" />
-    <Compile Include="Assets\Scripts\Joining.cs" />
-    <Compile Include="Assets\Scripts\NetworkShoots.cs" />
+    <Compile Include="Assets\Scripts\Lobby\HostingGame.cs" />
+    <Compile Include="Assets\Scripts\Lobby\Joining.cs" />
+    <Compile Include="Assets\Scripts\Lobby\RoomsList.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
-    <Compile Include="Assets\Scripts\PlayerMot.cs" />
     <Compile Include="Assets\Scripts\PlayerWeapon.cs" />
     <Compile Include="Assets\Scripts\Setup.cs" />
+    <Compile Include="Assets\Scripts\Shooting\Gunscript.cs" />
+    <Compile Include="Assets\Scripts\Shooting\NetworkShoots.cs" />
     <Compile Include="Assets\Scripts\TargetShoots.cs" />
     <Compile Include="Assets\Wiggle\scripts\balanceOnLegs.cs" />
     <Compile Include="Assets\Wiggle\scripts\CharacterUpright.cs" />
@@ -85,6 +86,7 @@
     <Compile Include="Assets\XWeaponTrail\Scripts\XWeaponTrail.cs" />
     <Compile Include="Assets\XWeaponTrail\Scripts\XWeaponTrailDemo.cs" />
     <None Include="Assets\XWeaponTrail\readme.txt" />
+    <None Include="Assets\Materials\Shader.shader" />
     <None Include="Assets\GE Common Assets\Readme.txt" />
     <None Include="Assets\XWeaponTrail\Shader\xft_displacement_screen.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">

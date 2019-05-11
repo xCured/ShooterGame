@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: 52a1748be3e43534289e0076d9d71a8c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: pCube1
+    100002: shard20
+    100004: shard21
+    100006: shard22
+    100008: shard23
+    100010: shard24
+    100012: shard25
+    100014: shard26
+    100016: shard27
+    100018: shard28
+    100020: shard29
+    100022: shard30
+    100024: shard31
+    100026: shard32
+    100028: shard33
+    100030: shard34
+    100032: shard35
+    100034: shard36
+    100036: shard37
+    100038: solidShatter3
+    100040: //RootNode
+    400000: pCube1
+    400002: shard20
+    400004: shard21
+    400006: shard22
+    400008: shard23
+    400010: shard24
+    400012: shard25
+    400014: shard26
+    400016: shard27
+    400018: shard28
+    400020: shard29
+    400022: shard30
+    400024: shard31
+    400026: shard32
+    400028: shard33
+    400030: shard34
+    400032: shard35
+    400034: shard36
+    400036: shard37
+    400038: solidShatter3
+    400040: //RootNode
+    2100000: lambert2
+    2100002: shatterInteriorS3
+    2300000: pCube1
+    2300002: shard20
+    2300004: shard21
+    2300006: shard22
+    2300008: shard23
+    2300010: shard24
+    2300012: shard25
+    2300014: shard26
+    2300016: shard27
+    2300018: shard28
+    2300020: shard29
+    2300022: shard30
+    2300024: shard31
+    2300026: shard32
+    2300028: shard33
+    2300030: shard34
+    2300032: shard35
+    2300034: shard36
+    2300036: shard37
+    3300000: pCube1
+    3300002: shard20
+    3300004: shard21
+    3300006: shard22
+    3300008: shard23
+    3300010: shard24
+    3300012: shard25
+    3300014: shard26
+    3300016: shard27
+    3300018: shard28
+    3300020: shard29
+    3300022: shard30
+    3300024: shard31
+    3300026: shard32
+    3300028: shard33
+    3300030: shard34
+    3300032: shard35
+    3300034: shard36
+    3300036: shard37
+    4300000: pCube1
+    4300002: shard20
+    4300004: shard21
+    4300006: shard22
+    4300008: shard23
+    4300010: shard24
+    4300012: shard25
+    4300014: shard26
+    4300016: shard27
+    4300018: shard28
+    4300020: shard29
+    4300022: shard30
+    4300024: shard31
+    4300026: shard32
+    4300028: shard33
+    4300030: shard34
+    4300032: shard35
+    4300034: shard36
+    4300036: shard37
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

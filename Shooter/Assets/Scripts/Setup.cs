@@ -60,12 +60,7 @@ public class Setup : NetworkBehaviour {
         GameManager.Unregister(transform.name);
     }
 
-    //void registerplayer()
-    //{
-    //    string id = "Player" + GetComponent<NetworkIdentity>().netId;
-
-    //    transform.name = id;
-    //}
+   
 
 
     //Runs everytime a client is set up locally 

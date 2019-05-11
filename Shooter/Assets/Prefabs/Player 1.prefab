@@ -37,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 14}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2718290111643622786
@@ -164,7 +164,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 1
+  m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -349,8 +349,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 228afeae71861a842820cb9da9fa35ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MouseSens: 2
-  MouseSensY: 2
 --- !u!114 &3134085379012222216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,6 +362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 6477949505598934560}
+  CameraLimit: 80
 --- !u!1 &1983153441870248971
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,7 +398,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 3.4}
-  m_SizeDelta: {x: 5, y: 10}
+  m_SizeDelta: {x: 3, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1983153441870248974
 CanvasRenderer:
@@ -572,7 +571,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -15}
-  m_SizeDelta: {x: 5, y: 10}
+  m_SizeDelta: {x: 3, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3622685730345346757
 CanvasRenderer:
@@ -646,7 +645,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -10, y: -6}
-  m_SizeDelta: {x: 10, y: 5}
+  m_SizeDelta: {x: 10, y: 3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1123419577679395756
 CanvasRenderer:
@@ -914,7 +913,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 1
+  m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -1101,8 +1100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e4d466da8e40334fa2c1818921ccb49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animatorController: {fileID: 6085543188387466807, guid: ec9fc2ffc2a7d1643914f4b666da80aa,
-    type: 3}
+  animatorController: {fileID: 0}
   distance: 1
   speed: 2
   hips: {fileID: 6477949505308525704}
@@ -1121,8 +1119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 228afeae71861a842820cb9da9fa35ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MouseSens: 2
-  MouseSensY: 1
 --- !u!114 &6535137023162139123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1136,6 +1132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 6477949505598934560}
+  CameraLimit: 80
 --- !u!1 &6477949505308525864
 GameObject:
   m_ObjectHideFlags: 0
@@ -1328,8 +1325,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 228afeae71861a842820cb9da9fa35ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MouseSens: 2
-  MouseSensY: 2
 --- !u!114 &4303552367392897991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1343,6 +1338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 6477949505598934560}
+  CameraLimit: 80
 --- !u!1 &6477949505308525865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1484,7 +1480,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!59 &3644172713528440816
 HingeJoint:
@@ -1529,7 +1525,7 @@ ConstantForce:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6477949505308525865}
   m_Enabled: 1
-  m_Force: {x: 0, y: 200, z: 0}
+  m_Force: {x: 0, y: 100, z: 0}
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
@@ -1563,6 +1559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 6477949505598934560}
+  CameraLimit: 80
 --- !u!114 &162140841993806814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1575,8 +1572,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 228afeae71861a842820cb9da9fa35ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MouseSens: 2
-  MouseSensY: 2
 --- !u!114 &5537350622877276049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1849,6 +1844,7 @@ MonoBehaviour:
   Layers:
     serializedVersion: 2
     m_Bits: 1335
+  Decal: {fileID: 527129158872935574, guid: 9ad771a520eb873408cbc6191ef009c3, type: 3}
 --- !u!114 &8907185309181918615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2263,6 +2259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 6477949505598934560}
+  CameraLimit: 80
 --- !u!114 &9150082771217053757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2275,8 +2272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 228afeae71861a842820cb9da9fa35ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MouseSens: 2
-  MouseSensY: 2
 --- !u!1 &6477949505308525867
 GameObject:
   m_ObjectHideFlags: 0
@@ -2410,7 +2405,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 1
+  m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -2449,8 +2444,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 228afeae71861a842820cb9da9fa35ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MouseSens: 2
-  MouseSensY: 2
 --- !u!114 &5262564290044634829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2464,6 +2457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 6477949505598934560}
+  CameraLimit: 80
 --- !u!1 &6477949505308525868
 GameObject:
   m_ObjectHideFlags: 0
@@ -2597,7 +2591,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 1
+  m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -2636,8 +2630,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 228afeae71861a842820cb9da9fa35ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MouseSens: 2
-  MouseSensY: 2
 --- !u!114 &8146915568549232865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2651,6 +2643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 6477949505598934560}
+  CameraLimit: 80
 --- !u!1 &6477949505308525869
 GameObject:
   m_ObjectHideFlags: 0
@@ -2843,8 +2836,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 228afeae71861a842820cb9da9fa35ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MouseSens: 2
-  MouseSensY: 2
 --- !u!114 &3613094349672400057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2858,6 +2849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 6477949505598934560}
+  CameraLimit: 80
 --- !u!1 &6477949505308525870
 GameObject:
   m_ObjectHideFlags: 0
@@ -2989,7 +2981,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 1
+  m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -3175,6 +3167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 6477949505598934560}
+  CameraLimit: 80
 --- !u!114 &6477949505308525908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3187,8 +3180,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 228afeae71861a842820cb9da9fa35ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MouseSens: 2
-  MouseSensY: 2
 --- !u!1 &6477949505308525879
 GameObject:
   m_ObjectHideFlags: 0
@@ -3322,7 +3313,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 1
+  m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -3361,8 +3352,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 228afeae71861a842820cb9da9fa35ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MouseSens: 2
-  MouseSensY: 2
 --- !u!114 &9203514125065622830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3376,6 +3365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 6477949505598934560}
+  CameraLimit: 80
 --- !u!1 &6477949505598934574
 GameObject:
   m_ObjectHideFlags: 0
@@ -3574,7 +3564,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 1
+  m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -3636,7 +3626,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 10, y: -6}
-  m_SizeDelta: {x: 10, y: 5}
+  m_SizeDelta: {x: 10, y: 3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8465245935851165568
 CanvasRenderer:
@@ -3835,8 +3825,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 228afeae71861a842820cb9da9fa35ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MouseSens: 2
-  MouseSensY: 2
 --- !u!114 &980195473554561870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3850,6 +3838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 6477949505598934560}
+  CameraLimit: 80
 --- !u!1 &8863104179031379191
 GameObject:
   m_ObjectHideFlags: 0
@@ -3966,7 +3955,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 1
+  m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
