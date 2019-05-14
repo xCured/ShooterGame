@@ -5,6 +5,10 @@ using UnityEngine.Networking;
 
 public class HostingGame : MonoBehaviour
 {
+
+    //I followed Brackeys tutorials on how to create the lobby screen.
+    //This script was created by following a tutorial.
+
     [SerializeField]
     private uint RoomSize = 10;
 

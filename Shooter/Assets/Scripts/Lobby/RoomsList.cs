@@ -7,7 +7,8 @@ using UnityEngine.Networking.Match;
 public class RoomsList : MonoBehaviour
 {
 
-
+    //I followed Brackeys tutorials on how to create the lobby screen.
+    //This script was created by following a tutorial.
     public delegate void JoinGames(MatchInfoSnapshot _match);
     private JoinGames joinCallbackc;
     [SerializeField]

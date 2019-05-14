@@ -43,16 +43,7 @@ public class PlayerManager : NetworkBehaviour
 
         SetDefaults();
     }
-    private void Update()
-    {
-        if (!isLocalPlayer)
-            return;
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-           RpcDamage(100); 
-        }
-     
-    }
+  
 
 
     public void SetDefaults()
@@ -81,7 +72,7 @@ public class PlayerManager : NetworkBehaviour
 
         currentHealth -= amount;
 
-        Debug.Log(transform.name + "Now has " + currentHealth + "health");
+      
 
         if(currentHealth <= 0)
         {
@@ -108,11 +99,7 @@ public class PlayerManager : NetworkBehaviour
         //}
 
         StartCoroutine(Respawning());
-       
-
-
-
-
+      
     }
 
     IEnumerator Respawning()

@@ -8,7 +8,8 @@ using UnityEngine.Networking.NetworkSystem;
 
 public class Joining : MonoBehaviour
 {
-
+    //I followed Brackeys tutorials on how to create the lobby screen.
+    //This script was created by following a tutorial.
     List<GameObject> RoomList = new List<GameObject>();
 
     private NetworkManager NetworkM;

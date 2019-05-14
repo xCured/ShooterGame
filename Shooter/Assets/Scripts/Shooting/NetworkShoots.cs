@@ -35,16 +35,16 @@ public class NetworkShoots : NetworkBehaviour
     public void Shoot()
     {
 
-        
+
         //MuzzleFlash.Play();
         RaycastHit RayHit;
         Ray Ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(Cameras.transform.position, Cameras.transform.forward, out RayHit, weapons.range))
         {
-            if (RayHit.transform.tag == "Player" )
+            if (RayHit.transform.tag == "Player")
             {
                 Debug.Log("You hit something");
-                
+
                 CmdPlayerShot(RayHit.collider.name, weapons.damage);
             }
 
@@ -53,10 +53,11 @@ public class NetworkShoots : NetworkBehaviour
                 RayHit.collider.GetComponent<Rigidbody>().isKinematic = false;
 
 
-                RayHit.collider.GetComponent<Rigidbody>().AddForce(3,3,2 * 4, ForceMode.Impulse);
+                RayHit.collider.GetComponent<Rigidbody>().AddForce(3, 3, 2 * 4, ForceMode.Impulse);
 
             }
-            if(Physics.Raycast(Ray, out RayHit)){
+            if (Physics.Raycast(Ray, out RayHit))
+            {
                 SpawnDecals(RayHit);
 
             }
@@ -67,14 +68,15 @@ public class NetworkShoots : NetworkBehaviour
         //The raycast checks if they locally hit something which they have, they send that information over to the 'command' section which is the server
         //Takes into consideration what we hit, and some damge 
         //Gets passed to the server [2]
-}
+    }
 
-   public void SpawnDecals(RaycastHit RayHit)
+    public void SpawnDecals(RaycastHit RayHit)
     {
         var decals = Instantiate(Decal);
-            decals.transform.position = RayHit.point;
-         decals.transform.forward = RayHit.normal * -1f;
+        decals.transform.position = RayHit.point;
+        decals.transform.forward = RayHit.normal * -1f;
     }
+
 
 
     [Command]
