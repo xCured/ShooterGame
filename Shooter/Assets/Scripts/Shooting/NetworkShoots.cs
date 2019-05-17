@@ -69,6 +69,26 @@ public class NetworkShoots : NetworkBehaviour
         //Takes into consideration what we hit, and some damge 
         //Gets passed to the server [2]
     }
+    // [Client]
+   // public void RpcCommandShoot( )
+   // {
+    //    RaycastHit RayHit;
+        //Ray Ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+  //      if (Physics.Raycast(Cameras.transform.position, Cameras.transform.forward, out RayHit, weapons.range))
+   //     {
+  //          if (RayHit.transform.tag == "Walls")
+   //         {
+  //              RayHit.collider.GetComponent<Rigidbody>().isKinematic = false;
+
+
+  //              RayHit.collider.GetComponent<Rigidbody>().AddForce(3, 3, 2 * 4, ForceMode.Impulse);
+
+
+//}
+  //      }
+
+
+   // }
 
     public void SpawnDecals(RaycastHit RayHit)
     {
